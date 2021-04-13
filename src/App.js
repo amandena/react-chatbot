@@ -1,8 +1,11 @@
+import Chatbot from 'react-chatbot-kit'
 
 function App() {
   return (
     <div className="App">
-      Chatbot
+      <header className="App-header">
+        <Chatbot />
+      </header>
     </div>
   )
 }
