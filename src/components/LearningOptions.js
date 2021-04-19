@@ -1,4 +1,4 @@
-import './learning-options.css'
+import '../css/learning-options.css'
 
 const LearningOptions = () => {
   const options = [
