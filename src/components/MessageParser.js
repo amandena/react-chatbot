@@ -10,6 +10,8 @@ class MessageParser {
     }
     if (lowerCaseMessage.includes("javascript")) {
       this.actionProvider.handleJavascriptList()
+    } else if (lowerCaseMessage.includes('data visualization')) {
+      this.actionProvider.handleDataVisualizationList()
     }
   }
 }
