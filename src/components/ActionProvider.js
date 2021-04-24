@@ -18,6 +18,16 @@ class ActionProvider {
     )
     this.updateChatbotState(message)
   }
+
+  handleDataVisualizationList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic, I've got the following resources for you on Data Visualization:",
+      {
+        widget: "dataVisualizationLinks",
+      }
+    )
+    this.updateChatbotState(message)
+  }
   
   updateChatbotState(message) {   
    this.setState(prevState => ({
