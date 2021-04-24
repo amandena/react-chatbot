@@ -5,7 +5,7 @@ import LinkList from './components/LinkList'
 const config = { 
   botName: "LearningBot",
   initialMessages: [
-    createChatBotMessage("Hi, I'm here to help. What do you want to 		learn?", {
+    createChatBotMessage("Hi, I'm here to help. What do you want to learn?", {
       widget: "learningOptions",
     }),
   ],
@@ -43,6 +43,31 @@ const config = {
             text: "Frontend Masters",
             url: "https://frontendmasters.com",
             id: 3,
+          },
+        ],
+      },
+    },
+    {
+      widgetName: 'dataVisualizationLinks',
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Learning Python for Data Analysis & Visualization",
+            url:
+              "https://www.udemy.com/course/learning-python-for-data-analysis-and-visualization/",
+            id: 4,
+          },
+          {
+            text: "Data Science",
+            url:
+              "https://www.edx.org/professional-certificate/harvardx-data-science?index=product&queryID=e841774065fa2e62d301d9f9f4ddd768&position=3",
+            id: 5,
+          },
+          {
+            text: "Data Visualization",
+            url: "https://www.udacity.com/course/data-visualization-nanodegree--nd197?irclickid=StZTYiWmuxyLUM9wUx0Mo3YfUkB0vQ10ETysXk0&irgwc=1&utm_source=affiliate&utm_medium=&aff=397676&utm_term=&utm_campaign=_dddatavisualization04_&utm_content=&adid=786224",
+            id: 6,
           },
         ],
       },
