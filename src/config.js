@@ -72,6 +72,31 @@ const config = {
         ],
       },
     },
+    {
+      widgetName: "APILinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Introduction to Web APIs",
+            url:
+              "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction",
+            id: 7,
+          },
+          {
+            text: "APIs for Beginners",
+            url:
+              "https://www.freecodecamp.org/news/apis-for-beginners-full-course/",
+            id: 8,
+          },
+          {
+            text: "APIs: Crash Course",
+            url: "https://www.udemy.com/course/learn-apis/",
+            id: 9,
+          },
+        ],
+      },
+    }
   ],
 }
 
