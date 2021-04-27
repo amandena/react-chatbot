@@ -12,6 +12,8 @@ class MessageParser {
       this.actionProvider.handleJavascriptList()
     } else if (lowerCaseMessage.includes('data visualization')) {
       this.actionProvider.handleDataVisualizationList()
+    } else if (lowerCaseMessage.icludes('apis')) {
+      this.actionProvider.handleApiList()
     }
   }
 }
