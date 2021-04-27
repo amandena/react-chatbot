@@ -28,6 +28,16 @@ class ActionProvider {
     )
     this.updateChatbotState(message)
   }
+
+  handleApiList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic, I've got the following resources for you on APIs:",
+      {
+        widget: "APILinks",
+      }
+    )
+    this.updateChatbotState(message)
+  }
   
   updateChatbotState(message) {   
    this.setState(prevState => ({
