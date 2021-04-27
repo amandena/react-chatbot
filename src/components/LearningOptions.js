@@ -12,7 +12,11 @@ const LearningOptions = (props) => {
       handler: props.actionProvider.handleDataVisualizationList, 
       id: 2 
     },
-    { text: "APIs", handler: () => {}, id: 3 },
+    { 
+      text: "APIs", 
+      handler: props.actionProvider.handleApiList, 
+      id: 3 
+    },
     { text: "Security", handler: () => {}, id: 4 },
     { text: "Interview prep", handler: () => {}, id: 5 },
   ]
