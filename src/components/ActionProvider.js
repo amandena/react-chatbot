@@ -38,6 +38,16 @@ class ActionProvider {
     )
     this.updateChatbotState(message)
   }
+
+  handleSecurityList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic, I've got the following resources for you on Security:",
+      {
+        widget: "securityLinks",
+      }
+    )
+    this.updateChatbotState(message)
+  }
   
   updateChatbotState(message) {   
    this.setState(prevState => ({
