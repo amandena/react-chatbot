@@ -14,6 +14,8 @@ class MessageParser {
       this.actionProvider.handleDataVisualizationList()
     } else if (lowerCaseMessage.icludes('apis')) {
       this.actionProvider.handleApiList()
+    } else if (lowerCaseMessage.includes('security')) {
+      this.actionProvider.handleSecurityList()
     }
   }
 }
