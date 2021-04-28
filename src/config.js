@@ -96,6 +96,31 @@ const config = {
           },
         ],
       },
+    },
+    {
+      widgetName: "securityLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "Cybersecurity Bootcamp",
+            url:
+              "https://digitalskills.njit.edu/lp/steph-v2/?sp=google&sp=google&utm_source=google&utm_medium=cpc&utm_campaign=NJIT-Cybersecurity-Generic-tcpa53&utm_adset=cybersecurity&utm_term=cyber%20security&adpos=&device=c&creative474648073886&placement=&cid=10733039018&asid=111290604612&kmt=p&net=g&device_model=&target=kwd-119746396&gclid=CjwKCAjw7J6EBhBDEiwA5UUM2t4x9Io8MBQjnuVekhD9UmE3pZneu7R3hnbYPaAL4TfY4CyWPTXwaxoCk6sQAvD_BwE",
+            id: 10,
+          },
+          {
+            text: "The Complete Cyber Security Course: Hackers Exposed!",
+            url:
+              "https://www.udemy.com/course/the-complete-internet-security-privacy-course-volume-1/",
+            id: 11,
+          },
+          {
+            text: "The Complete Cyber Security Course: Network Security!",
+            url: "https://www.udemy.com/course/network-security-course/",
+            id: 12,
+          },
+        ],
+      },
     }
   ],
 }
