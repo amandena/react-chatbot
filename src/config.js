@@ -121,6 +121,31 @@ const config = {
           },
         ],
       },
+    },
+    {
+      widgetName: "interviewPrepLinks",
+      widgetFunc: (props) => <LinkList {...props} />,
+      props: {
+        options: [
+          {
+            text: "The Coding Interview Bootcamp: Algorithms + Data Structures",
+            url:
+              "https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/?ranMID=39197&ranEAID=vedj0cWlu2Y&ranSiteID=vedj0cWlu2Y-2NKgiPp.7eIGyhcJfOBhPA&LSNPUBID=vedj0cWlu2Y&utm_source=aff-campaign&utm_medium=udemyads",
+            id: 13,
+          },
+          {
+            text: "Python for Data Structures, Algorithms and Interviews",
+            url:
+              "https://www.udemy.com/course/python-for-data-structures-algorithms-and-interviews/?ranMID=39197&ranEAID=vedj0cWlu2Y&ranSiteID=vedj0cWlu2Y-YqiB1wxQTXVb9A_BClomow&utm_source=aff-campaign&utm_medium=udemyads&LSNPUBID=vedj0cWlu2Y",
+            id: 14,
+          },
+          {
+            text: "Mastering Web Developer Interview Code",
+            url: "https://www.linkedin.com/learning/mastering-web-developer-interview-code",
+            id: 15,
+          },
+        ],
+      },
     }
   ],
 }
