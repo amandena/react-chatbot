@@ -7,8 +7,7 @@ class MessageParser {
     const lowerCaseMessage = message.toLowerCase()
     if (lowerCaseMessage.includes("hello")) {
       this.actionProvider.greet()
-    }
-    if (lowerCaseMessage.includes("javascript")) {
+    } else if (lowerCaseMessage.includes("javascript")) {
       this.actionProvider.handleJavascriptList()
     } else if (lowerCaseMessage.includes('data visualization')) {
       this.actionProvider.handleDataVisualizationList()
@@ -16,6 +15,8 @@ class MessageParser {
       this.actionProvider.handleApiList()
     } else if (lowerCaseMessage.includes('security')) {
       this.actionProvider.handleSecurityList()
+    } else if (lowerCaseMessage.includes('interview prep')) {
+      this.actionProvider.handleInterviewPrepList()
     }
   }
 }
