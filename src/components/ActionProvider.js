@@ -48,6 +48,16 @@ class ActionProvider {
     )
     this.updateChatbotState(message)
   }
+
+  handleInterviewPrepList = () => {
+    const message = this.createChatBotMessage(
+      "Fantastic, I've got the following resources for you on Interview Prep:",
+      {
+        widget: "interviewPrepLinks",
+      }
+    )
+    this.updateChatbotState(message)
+  }
   
   updateChatbotState(message) {   
    this.setState(prevState => ({
