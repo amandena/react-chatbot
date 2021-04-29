@@ -22,7 +22,11 @@ const LearningOptions = (props) => {
       handler: props.actionProvider.handleSecurityList, 
       id: 4 
     },
-    { text: "Interview prep", handler: () => {}, id: 5 },
+    { 
+      text: "Interview prep", 
+      handler: props.actionProvider.handleInterviewPrepList, 
+      id: 5 
+    },
   ]
 
   const optionsMarkup = options.map((option) => (
